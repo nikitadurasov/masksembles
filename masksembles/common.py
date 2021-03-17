@@ -67,10 +67,23 @@ def generation_wrapper(c: int, n: int, scale: float) -> np.ndarray:
     :param scale: float, scale param controls overlap of generated masks
     :return: np.ndarray, matrix of binary vectors
     """
+
+    if c < 10:
+        raise ValueError("Masksembles approach couldn't be used in such setups where "
+                         f"number of channels is less then 10. Current value is (channels={c}). "
+                         "Please increase number of features in your layer or remove this "
+                         "particular instance of Masksembles from your architecture.")
+
+    if scale > 6.:
+        raise ValueError("Masksembles approach couldn't be used in such setups where "
+                         f"scale parameter is larger then 6. Current value is ({scale=}).")
+
+    # inverse formula for number of active features in masks
     active_features = int(c / (scale * (1 - (1 - 1 / scale) ** n)))
-    for s in np.linspace(1, 3 / 2 * scale, 100):
-        masks = generate_masks(active_features, n, s)
+
+    masks = generate_masks(active_features, n, scale)
+    for s in np.linspace(max(0.8 * scale, 1.0), 1.5 * scale, 100):
         if masks.shape[-1] == c:
             break
-    assert masks.shape[-1] == c, "Failed to generate proper masks, try other value for scale"
+        masks = generate_masks(active_features, n, s)
     return masks
