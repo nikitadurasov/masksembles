@@ -18,7 +18,7 @@ class Masksembles2D(tf.keras.layers.Layer):
     Examples:
 
     >>> m = Masksembles2D(4, 2.0)
-    >>> inputs = torch.ones([4, 28, 28, 16])
+    >>> inputs = tf.ones([4, 28, 28, 16])
     >>> output = m(inputs)
 
     References:
@@ -70,7 +70,7 @@ class Masksembles1D(tf.keras.layers.Layer):
     Examples:
 
     >>> m = Masksembles1D(4, 2.0)
-    >>> inputs = torch.ones([4, 16])
+    >>> inputs = tf.ones([4, 16])
     >>> output = m(inputs)
 
 

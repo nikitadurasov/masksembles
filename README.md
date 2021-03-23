@@ -60,7 +60,7 @@ tensor([[0., 1., 0., 0., 1., 0., 1., 1., 1., 1.],
 
 ```python 
 import tensorflow as tf 
-from masksembles.torch import Masksembles2D
+from masksembles.keras import Masksembles2D
 
 layer = Masksembles1D(4, 2.)
 layer(tf.ones([4, 10]))
