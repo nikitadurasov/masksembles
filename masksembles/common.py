@@ -76,7 +76,7 @@ def generation_wrapper(c: int, n: int, scale: float) -> np.ndarray:
 
     if scale > 6.:
         raise ValueError("Masksembles approach couldn't be used in such setups where "
-                         f"scale parameter is larger then 6. Current value is ({scale=}).")
+                         f"scale parameter is larger then 6. Current value is (scale={scale}).")
 
     # inverse formula for number of active features in masks
     active_features = int(c / (scale * (1 - (1 - 1 / scale) ** n)))
