@@ -85,14 +85,14 @@ def generation_wrapper(c: int, n: int, scale: float) -> np.ndarray:
     #  proper number of features in masks, sometimes search is not accurate
     #  enough and masks.shape != c. Could fix it with binary search.
     masks = generate_masks(active_features, n, scale)
-    for s in np.linspace(max(0.8 * scale, 1.0), 1.5 * scale, 200):
+    for s in np.linspace(max(0.8 * scale, 1.0), 1.5 * scale, 300):
         if masks.shape[-1] >= c:
             break
         masks = generate_masks(active_features, n, s)
     new_upper_scale = s
 
     if masks.shape[-1] != c:
-        for s in np.linspace(max(0.8 * scale, 1.0), new_upper_scale, 500):
+        for s in np.linspace(max(0.8 * scale, 1.0), new_upper_scale, 1000):
             if masks.shape[-1] >= c:
                 break
             masks = generate_masks(active_features, n, s)
