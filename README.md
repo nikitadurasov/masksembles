@@ -80,5 +80,20 @@ array([[0., 1., 1., 0., 1., 1., 1., 0., 1., 0.],
 import tensorflow as tf 
 from masksembles.keras import Masksembles1D, Masksembles2D
 
-...
+model = keras.Sequential(
+    [
+        keras.Input(shape=input_shape),
+        layers.Conv2D(32, kernel_size=(3, 3), activation="elu"),
+        Masksembles2D(4, 2.0),
+        layers.MaxPooling2D(pool_size=(2, 2)),
+     
+        layers.Conv2D(64, kernel_size=(3, 3), activation="elu"),
+        Masksembles2D(4, 2.0),
+        layers.MaxPooling2D(pool_size=(2, 2)),
+     
+        layers.Flatten(),
+        Masksembles1D(4, 2.),
+        layers.Dense(num_classes, activation="softmax"),
+    ]
+)
 ```
