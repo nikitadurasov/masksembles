@@ -1,6 +1,8 @@
 # Masksembles for Uncertainty Estimation
 
-### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](#) 
+### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](#)
+
+[![Open HiDT in Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 Official implementation of Masksembles approach from the paper "Masksembles for Uncertainty Estimation" by
  Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua. In 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
@@ -43,7 +45,7 @@ implementation we've followed approach similar to [this](https://arxiv.org/abs/2
 
 ```python 
 import torch
-from masksembles.torch import Masksembles2D
+from masksembles.torch import Masksembles1D
 
 layer = Masksembles1D(10, 4, 2.)
 layer(torch.ones([4, 10]))
@@ -60,7 +62,7 @@ tensor([[0., 1., 0., 0., 1., 0., 1., 1., 1., 1.],
 
 ```python 
 import tensorflow as tf 
-from masksembles.keras import Masksembles2D
+from masksembles.keras import Masksembles1D
 
 layer = Masksembles1D(4, 2.)
 layer(tf.ones([4, 10]))
@@ -71,4 +73,12 @@ array([[0., 1., 1., 0., 1., 1., 1., 0., 1., 0.],
        [0., 1., 0., 1., 1., 0., 1., 1., 0., 1.],
        [1., 1., 1., 1., 0., 0., 1., 0., 0., 1.],
        [1., 0., 0., 1., 0., 1., 1., 0., 1., 1.]], dtype=float32)>
+```
+
+### Model example
+```python 
+import tensorflow as tf 
+from masksembles.keras import Masksembles1D, Masksembles2D
+
+...
 ```
