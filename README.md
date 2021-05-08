@@ -2,7 +2,7 @@
 
 ### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](#)
 
-[![Open HiDT in Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+[![Open HiDT in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikitadurasov/masksembles/blob/main/notebooks/MNIST_Masksembles.ipynb)
 
 Official implementation of Masksembles approach from the paper "Masksembles for Uncertainty Estimation" by
  Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua. In 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
