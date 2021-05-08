@@ -81,9 +81,24 @@ def generation_wrapper(c: int, n: int, scale: float) -> np.ndarray:
     # inverse formula for number of active features in masks
     active_features = int(c / (scale * (1 - (1 - 1 / scale) ** n)))
 
+    # FIXME this piece searches for scale parameter value that generates
+    #  proper number of features in masks, sometimes search is not accurate
+    #  enough and masks.shape != c. Could fix it with binary search.
     masks = generate_masks(active_features, n, scale)
-    for s in np.linspace(max(0.8 * scale, 1.0), 1.5 * scale, 100):
-        if masks.shape[-1] == c:
+    for s in np.linspace(max(0.8 * scale, 1.0), 1.5 * scale, 200):
+        if masks.shape[-1] >= c:
             break
         masks = generate_masks(active_features, n, s)
+    new_upper_scale = s
+
+    if masks.shape[-1] != c:
+        for s in np.linspace(max(0.8 * scale, 1.0), new_upper_scale, 500):
+            if masks.shape[-1] >= c:
+                break
+            masks = generate_masks(active_features, n, s)
+
+    if masks.shape[-1] != c:
+        raise ValueError("generation_wrapper function failed to generate masks with "
+                         "requested number of features. Please try to change scale parameter")
+
     return masks
