@@ -2,14 +2,19 @@
 
 ### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](#)
 
-[![Open HiDT in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikitadurasov/masksembles/blob/main/notebooks/MNIST_Masksembles.ipynb)
+[![Open Masksembles in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikitadurasov/masksembles/blob/main/notebooks/MNIST_Masksembles.ipynb)
 
-Official implementation of Masksembles approach from the paper "Masksembles for Uncertainty Estimation" by
- Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua. In 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
-
+---
+Official implementation of Masksembles approach from the paper "Masksembles for Uncertainty Estimation" by 
+Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua (CVPR 2021).
+---
 <p align="center">
   <img style="border-radius: 30px" src="https://raw.githubusercontent.com/nikitadurasov/masksembles/main/images/transition.gif" />
 </p>
+
+## Why Uncertainty?
+
+TBD
 
 ## Installation
 
@@ -96,4 +101,15 @@ model = keras.Sequential(
         layers.Dense(num_classes, activation="softmax"),
     ]
 )
+```
+
+## Citation
+If you found this work useful for your projects, please don't forget to cite it.
+```
+@inproceedings{Durasov21,
+  author = {N. Durasov and T. Bagautdinov and P. Baque and P. Fua},
+  title = {{Masksembles for Uncertainty Estimation}},
+  booktitle = CVPR,
+  year = 2021
+}
 ```
