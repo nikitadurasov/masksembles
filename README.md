@@ -1,16 +1,20 @@
 # Masksembles for Uncertainty Estimation
 
-### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](#)
+<!-- ---
+Official implementation of Masksembles approach from the paper "Masksembles for Uncertainty Estimation" by 
+Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua (CVPR 2021).
+
+--- -->
+
+### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](https://www.youtube.com/watch?v=oHg5SJYRHA0)
 
 [![Open Masksembles in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikitadurasov/masksembles/blob/main/notebooks/MNIST_Masksembles.ipynb)
 
----
-Official implementation of Masksembles approach from the paper "Masksembles for Uncertainty Estimation" by 
-Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua (CVPR 2021).
----
-<p align="center">
+<!-- <p align="center">
   <img style="border-radius: 30px" src="https://raw.githubusercontent.com/nikitadurasov/masksembles/main/images/transition.gif" />
-</p>
+</p> -->
+
+
 
 ## Why Uncertainty?
 
