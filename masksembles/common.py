@@ -79,7 +79,7 @@ def generation_wrapper(c: int, n: int, scale: float) -> np.ndarray:
                          f"scale parameter is larger then 6. Current value is (scale={scale}).")
 
     # inverse formula for number of active features in masks
-    active_features = int(c / (scale * (1 - (1 - 1 / scale) ** n)))
+    active_features = int(int(c) / (scale * (1 - (1 - 1 / scale) ** n)))
 
     # FIXME this piece searches for scale parameter value that generates
     #  proper number of features in masks, sometimes search is not accurate
