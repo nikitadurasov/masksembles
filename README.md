@@ -6,19 +6,28 @@ Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua (CVPR 2021).
 
 --- -->
 
+![Project Page](./images/mask_logo.png)
 ### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](https://www.youtube.com/watch?v=oHg5SJYRHA0)
 
 [![Open Masksembles in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikitadurasov/masksembles/blob/main/notebooks/MNIST_Masksembles.ipynb)
+
+<!-- <p align="center">
+  <img style="border-radius: 30px" src="/images/mask_logo.png" />
+</p>-->
 
 <!-- <p align="center">
   <img style="border-radius: 30px" src="https://raw.githubusercontent.com/nikitadurasov/masksembles/main/images/transition.gif" />
 </p> -->
 
 
+## Why Masksembles?
 
-## Why Uncertainty?
+**Uncertainty Estimation** is one of the most important and critical tasks in the area of modern neural networks and deep learning.
+There is a long list of potential applications of uncertainty: safety-critical applications, active learning, domain adaptation, 
+reinforcement learning and etc.
 
-TBD
+**Masksembles** is a **simple** and **easy-to-use** drop-in method with performance on par with Deep Ensembles at a fraction of the cost.
+It makes *almost* no changes in your original model and requires only to add special intermediate layers. 
 
 ## Installation
 
