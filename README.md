@@ -7,7 +7,7 @@ Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua (CVPR 2021).
 --- -->
 
 ![Project Page](./images/mask_logo.png)
-### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](https://www.youtube.com/watch?v=oHg5SJYRHA0)
+### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](https://www.youtube.com/watch?v=YWKVdn3kLp0)
 
 [![Open Masksembles in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikitadurasov/masksembles/blob/main/notebooks/MNIST_Masksembles.ipynb)
 
