@@ -84,7 +84,7 @@ def generation_wrapper(c: int, n: int, scale: float) -> np.ndarray:
     # Fix the last part by using binary search 
     max_iter = 1000
 
-    min = scale * 0.8
+    min = max(scale * 0.8, 1.0)
     max = scale * 1.2
 
     for _ in range(max_iter):
