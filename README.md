@@ -12,10 +12,6 @@ Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua (CVPR 2021).
 [![Open Masksembles in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikitadurasov/masksembles/blob/main/notebooks/MNIST_Masksembles.ipynb)
 
 <!-- <p align="center">
-  <img style="border-radius: 30px" src="/images/mask_logo.png" />
-</p>-->
-
-<!-- <p align="center">
   <img style="border-radius: 30px" src="https://raw.githubusercontent.com/nikitadurasov/masksembles/main/images/transition.gif" />
 </p> -->
 
@@ -28,6 +24,10 @@ reinforcement learning and etc.
 
 **Masksembles** is a **simple** and **easy-to-use** drop-in method with performance on par with Deep Ensembles at a fraction of the cost.
 It makes *almost* no changes in your original model and requires only to add special intermediate layers. 
+
+[![Watch the video](https://img.youtube.com/vi/YWKVdn3kLp0/maxresdefault.jpg)](https://youtu.be/YWKVdn3kLp0)
+
+### [Watch this video on YouTube](https://youtu.be/YWKVdn3kLp0)
 
 ## Installation
 
