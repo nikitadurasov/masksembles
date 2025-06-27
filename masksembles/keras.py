@@ -37,7 +37,7 @@ class Masksembles2D(tf.keras.layers.Layer):
     def build(self, input_shape):
         channels = input_shape[-1]
         masks = common.generation_wrapper(channels, self.n, self.scale)
-        self.masks = self.add_weight("masks",
+        self.masks = self.add_weight(name="masks",
                                      shape=masks.shape,
                                      trainable=False,
                                      dtype="float32")
@@ -90,7 +90,7 @@ class Masksembles1D(tf.keras.layers.Layer):
     def build(self, input_shape):
         channels = input_shape[-1]
         masks = common.generation_wrapper(channels, self.n, self.scale)
-        self.masks = self.add_weight("masks",
+        self.masks = self.add_weight(name="masks",
                                      shape=masks.shape,
                                      trainable=False,
                                      dtype="float32")
