@@ -7,6 +7,35 @@ Nikita Durasov, Timur Bagautdinov, Pierre Baque, Pascal Fua (CVPR 2021).
 --- -->
 
 ![Project Page](./images/mask_logo.png)
+
+<p align="center">
+  <a href="https://pypi.org/project/masksembles/">
+    <img alt="PyPI" src="https://img.shields.io/pypi/v/masksembles.svg">
+  </a>
+  <a href="https://pepy.tech/project/masksembles">
+    <img alt="PyPI Downloads" src="https://static.pepy.tech/badge/masksembles">
+  </a>
+  <a href="https://pepy.tech/project/masksembles">
+    <img alt="Monthly Downloads" src="https://static.pepy.tech/badge/masksembles/month">
+  </a>
+  <a href="https://pypi.org/project/masksembles/">
+    <img alt="Python Versions" src="https://img.shields.io/pypi/pyversions/masksembles">
+  </a>
+  <a href="https://github.com/nikitadurasov/masksembles/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/nikitadurasov/masksembles?style=social">
+  </a>
+  <a href="https://github.com/nikitadurasov/masksembles/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/nikitadurasov/masksembles?style=social">
+  </a>
+  <a href="https://github.com/nikitadurasov/masksembles/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/nikitadurasov/masksembles">
+  </a>
+  <a href="https://github.com/nikitadurasov/masksembles/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/nikitadurasov/masksembles">
+  </a>
+</p>
+
+
 ### [Project Page](https://nikitadurasov.github.io/projects/masksembles/) | [Paper](https://arxiv.org/abs/2012.08334) | [Video Explanation](https://www.youtube.com/watch?v=YWKVdn3kLp0)
 
 [![Open Masksembles in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikitadurasov/masksembles/blob/main/notebooks/MNIST_Masksembles.ipynb)
