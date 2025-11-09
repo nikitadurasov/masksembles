@@ -34,6 +34,10 @@ It makes *almost* no changes in your original model and requires only to add spe
 To install this package, use:
 
 ```bash
+pip install masksembles
+```
+or
+```bash
 pip install git+http://github.com/nikitadurasov/masksembles
 ```
 
